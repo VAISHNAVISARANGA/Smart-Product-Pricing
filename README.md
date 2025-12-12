@@ -1,6 +1,6 @@
 # Amazon Price Predictor
 
-This repository contains a multimodal pricing pipeline built for the Amazon ML Hackathon 2025. The project extracts text and image embeddings, fuses them, reduces dimensionality with PCA, and trains an ensemble of tree-based regressors using cross-validation to predict product prices.
+This repository contains a multimodal pricing pipeline built for the Amazon ML Challenge 2025. The project extracts text and image embeddings, fuses them, reduces dimensionality with PCA, and trains an ensemble of tree-based regressors using cross-validation to predict product prices.
 
 ## Project highlights
 - Built for: **Amazon ML Hackathon 2025**
@@ -57,5 +57,6 @@ Artifacts produced:
 ## Notes
 - Models are trained in `log1p(price)` space; predictions are inverse-transformed with `expm1` for final price outputs.
 - Use OOF (out-of-fold) predictions for reliable CV-based evaluation and stacking.
+
 
 
